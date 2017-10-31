@@ -1,0 +1,893 @@
+/* Stage */
+/* line 5, /Volumes/agriffis1/google-doodle/scss/_google-homepage.scss */
+#stage {
+  height: 300px;
+  width: 600px;
+  margin: 3em auto; }
+
+/* DO NOT EDIT BELOW THIS LINE */
+/* line 14, /Volumes/agriffis1/google-doodle/scss/_google-homepage.scss */
+input {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC) no-repeat center right;
+  border: 1px solid #aaa;
+  display: block;
+  padding: 1em;
+  margin: 0 auto;
+  outline: none;
+  line-height: 36px;
+  width: 50%; }
+
+/* line 25, /Volumes/agriffis1/google-doodle/scss/_google-homepage.scss */
+#goole-buttons {
+  margin: 3em auto;
+  text-align: center;
+  width: 50%; }
+
+/* line 31, /Volumes/agriffis1/google-doodle/scss/_google-homepage.scss */
+button {
+  display: inline-block;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: default;
+  font-family: arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  padding: .5em 1em;
+  text-align: center; }
+
+/* line 21, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+svg {
+  position: absolute;
+  stroke-linecap: round;
+  stroke-linejoin: round; }
+
+/* line 27, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage {
+  position: relative;
+  overflow: hidden; }
+
+/* line 32, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#vignette {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: inset 0px 0px 30px 30px white; }
+
+/* line 44, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf {
+  stroke-width: 0.33; }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(2):not(#first-leaf) {
+  width: 39.49647px;
+  height: 39.49647px;
+  left: -59.49647px;
+  top: 148px;
+  fill: #816528;
+  stroke: #5a461c;
+  z-index: 39;
+  transform-origin: 19.74824px 19.74824px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(2) {
+  animation: 8.05035s linear 15.97216s infinite random-leaf-2; }
+
+@keyframes random-leaf-2 {
+  100% {
+    transform: translateX(740px) translateY(156px) rotate(871.31258deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(3):not(#first-leaf) {
+  width: 76.05287px;
+  height: 76.05287px;
+  left: -96.05287px;
+  top: 172px;
+  fill: #a3492e;
+  stroke: #7b3723;
+  z-index: 76;
+  transform-origin: 19.01322px 57.03965px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(3) {
+  animation: 4.39471s linear 7.4677s infinite random-leaf-3; }
+
+@keyframes random-leaf-3 {
+  100% {
+    transform: translateX(740px) translateY(194px) rotate(-357.69603deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(4):not(#first-leaf) {
+  width: 43.06234px;
+  height: 43.06234px;
+  left: -63.06234px;
+  top: 35px;
+  fill: #b63d2f;
+  stroke: #8e2f25;
+  z-index: 43;
+  transform-origin: 21.53117px 21.53117px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(4) {
+  animation: 7.69377s linear 15.42491s infinite random-leaf-4; }
+
+@keyframes random-leaf-4 {
+  100% {
+    transform: translateX(740px) translateY(197px) rotate(854.37522deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(5):not(#first-leaf) {
+  width: 32.39831px;
+  height: 32.39831px;
+  left: -52.39831px;
+  top: -52px;
+  fill: #af4728;
+  stroke: #85361e;
+  z-index: 32;
+  transform-origin: 16.19915px 16.19915px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(5) {
+  animation: 8.76017s linear 7.01702s infinite random-leaf-5; }
+
+@keyframes random-leaf-5 {
+  100% {
+    transform: translateX(740px) translateY(181px) rotate(879.1408deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(6):not(#first-leaf) {
+  width: 48.18831px;
+  height: 48.18831px;
+  left: -68.18831px;
+  top: 158px;
+  fill: #a14f26;
+  stroke: #783b1c;
+  z-index: 48;
+  transform-origin: 24.09416px 24.09416px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(6) {
+  animation: 7.18117s linear 15.63371s infinite random-leaf-6; }
+
+@keyframes random-leaf-6 {
+  100% {
+    transform: translateX(740px) translateY(160px) rotate(542.27772deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(7):not(#first-leaf) {
+  width: 30.31938px;
+  height: 30.31938px;
+  left: -50.31938px;
+  top: -24px;
+  fill: #7f4929;
+  stroke: #59331d;
+  z-index: 30;
+  transform-origin: 15.15969px 15.15969px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(7) {
+  animation: 8.96806s linear 14.06066s infinite random-leaf-7; }
+
+@keyframes random-leaf-7 {
+  100% {
+    transform: translateX(740px) translateY(153px) rotate(327.01932deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(8):not(#first-leaf) {
+  width: 53.05409px;
+  height: 53.05409px;
+  left: -73.05409px;
+  top: -11px;
+  fill: #956028;
+  stroke: #6d461d;
+  z-index: 53;
+  transform-origin: 13.26352px 39.79056px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(8) {
+  animation: 6.69459s linear 15.42148s infinite random-leaf-8; }
+
+@keyframes random-leaf-8 {
+  100% {
+    transform: translateX(740px) translateY(178px) rotate(-971.5405deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(9):not(#first-leaf) {
+  width: 30.03551px;
+  height: 30.03551px;
+  left: -50.03551px;
+  top: -98px;
+  fill: #874021;
+  stroke: #5e2c17;
+  z-index: 30;
+  transform-origin: 7.50888px 22.52663px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(9) {
+  animation: 8.99645s linear 11.90758s infinite random-leaf-9; }
+
+@keyframes random-leaf-9 {
+  100% {
+    transform: translateX(740px) translateY(170px) rotate(-440.41237deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(10):not(#first-leaf) {
+  width: 30.06628px;
+  height: 30.06628px;
+  left: -50.06628px;
+  top: -86px;
+  fill: #7a6924;
+  stroke: #524719;
+  z-index: 30;
+  transform-origin: 15.03314px 15.03314px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(10) {
+  animation: 8.99337s linear 6.39326s infinite random-leaf-10; }
+
+@keyframes random-leaf-10 {
+  100% {
+    transform: translateX(740px) translateY(192px) rotate(1014.36976deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(11):not(#first-leaf) {
+  width: 30.00335px;
+  height: 30.00335px;
+  left: -50.00335px;
+  top: 20px;
+  fill: #c3752c;
+  stroke: #9a5c23;
+  z-index: 30;
+  transform-origin: 15.00168px 15.00168px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(11) {
+  animation: 8.99966s linear 13.18893s infinite random-leaf-11; }
+
+@keyframes random-leaf-11 {
+  100% {
+    transform: translateX(740px) translateY(160px) rotate(1010.4569deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(12):not(#first-leaf) {
+  width: 30.63337px;
+  height: 30.63337px;
+  left: -50.63337px;
+  top: -11px;
+  fill: #a75525;
+  stroke: #7d3f1c;
+  z-index: 31;
+  transform-origin: 7.65834px 22.97503px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(12) {
+  animation: 8.93666s linear 12.41156s infinite random-leaf-12; }
+
+@keyframes random-leaf-12 {
+  100% {
+    transform: translateX(740px) translateY(165px) rotate(-330.58456deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(13):not(#first-leaf) {
+  width: 30.02495px;
+  height: 30.02495px;
+  left: -50.02495px;
+  top: -11px;
+  fill: #b05027;
+  stroke: #863d1d;
+  z-index: 30;
+  transform-origin: 7.50624px 22.51871px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(13) {
+  animation: 8.9975s linear 14.76565s infinite random-leaf-13; }
+
+@keyframes random-leaf-13 {
+  100% {
+    transform: translateX(740px) translateY(166px) rotate(-808.42699deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(14):not(#first-leaf) {
+  width: 30.0009px;
+  height: 30.0009px;
+  left: -50.0009px;
+  top: -94px;
+  fill: #bd6e3d;
+  stroke: #965831;
+  z-index: 30;
+  transform-origin: 15.00045px 15.00045px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(14) {
+  animation: 8.99991s linear 8.75786s infinite random-leaf-14; }
+
+@keyframes random-leaf-14 {
+  100% {
+    transform: translateX(740px) translateY(168px) rotate(421.46029deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(15):not(#first-leaf) {
+  width: 76.3673px;
+  height: 76.3673px;
+  left: -96.3673px;
+  top: 107px;
+  fill: #80471e;
+  stroke: #573014;
+  z-index: 76;
+  transform-origin: 19.09182px 57.27547px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(15) {
+  animation: 4.36327s linear 15.32867s infinite random-leaf-15; }
+
+@keyframes random-leaf-15 {
+  100% {
+    transform: translateX(740px) translateY(186px) rotate(-783.26067deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(16):not(#first-leaf) {
+  width: 45.98824px;
+  height: 45.98824px;
+  left: -65.98824px;
+  top: 29px;
+  fill: #945f2e;
+  stroke: #6d4622;
+  z-index: 46;
+  transform-origin: 22.99412px 22.99412px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(16) {
+  animation: 7.40118s linear 15.73384s infinite random-leaf-16; }
+
+@keyframes random-leaf-16 {
+  100% {
+    transform: translateX(740px) translateY(195px) rotate(514.32398deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(17):not(#first-leaf) {
+  width: 31.21823px;
+  height: 31.21823px;
+  left: -51.21823px;
+  top: 172px;
+  fill: #865a27;
+  stroke: #5f3f1c;
+  z-index: 31;
+  transform-origin: 15.60912px 15.60912px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(17) {
+  animation: 8.87818s linear 15.16029s infinite random-leaf-17; }
+
+@keyframes random-leaf-17 {
+  100% {
+    transform: translateX(740px) translateY(179px) rotate(801.77476deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(18):not(#first-leaf) {
+  width: 30.16869px;
+  height: 30.16869px;
+  left: -50.16869px;
+  top: 117px;
+  fill: #c67a2f;
+  stroke: #9d6125;
+  z-index: 30;
+  transform-origin: 15.08434px 15.08434px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(18) {
+  animation: 8.98313s linear 13.0277s infinite random-leaf-18; }
+
+@keyframes random-leaf-18 {
+  100% {
+    transform: translateX(740px) translateY(165px) rotate(427.22797deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(19):not(#first-leaf) {
+  width: 57.09236px;
+  height: 57.09236px;
+  left: -77.09236px;
+  top: 86px;
+  fill: #9b462c;
+  stroke: #733421;
+  z-index: 57;
+  transform-origin: 28.54618px 28.54618px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(19) {
+  animation: 6.29076s linear 9.64121s infinite random-leaf-19; }
+
+@keyframes random-leaf-19 {
+  100% {
+    transform: translateX(740px) translateY(180px) rotate(931.94904deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(20):not(#first-leaf) {
+  width: 31.64569px;
+  height: 31.64569px;
+  left: -51.64569px;
+  top: -86px;
+  fill: #8c5e26;
+  stroke: #64431b;
+  z-index: 32;
+  transform-origin: 15.82284px 15.82284px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(20) {
+  animation: 8.83543s linear 9.78045s infinite random-leaf-20; }
+
+@keyframes random-leaf-20 {
+  100% {
+    transform: translateX(740px) translateY(171px) rotate(859.1829deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(21):not(#first-leaf) {
+  width: 30.41152px;
+  height: 30.41152px;
+  left: -50.41152px;
+  top: -12px;
+  fill: #b6482f;
+  stroke: #8e3825;
+  z-index: 30;
+  transform-origin: 15.20576px 15.20576px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(21) {
+  animation: 8.95885s linear 6.81528s infinite random-leaf-21; }
+
+@keyframes random-leaf-21 {
+  100% {
+    transform: translateX(740px) translateY(173px) rotate(977.89174deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(22):not(#first-leaf) {
+  width: 71.03838px;
+  height: 71.03838px;
+  left: -91.03838px;
+  top: -97px;
+  fill: #975621;
+  stroke: #6d3e18;
+  z-index: 71;
+  transform-origin: 35.51919px 35.51919px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(22) {
+  animation: 4.89616s linear 13.50038s infinite random-leaf-22; }
+
+@keyframes random-leaf-22 {
+  100% {
+    transform: translateX(740px) translateY(198px) rotate(710.63917deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(23):not(#first-leaf) {
+  width: 94.13013px;
+  height: 94.13013px;
+  left: -114.13013px;
+  top: -43px;
+  fill: #a2582a;
+  stroke: #7a421f;
+  z-index: 94;
+  transform-origin: 23.53253px 70.5976px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(23) {
+  animation: 2.58699s linear 15.07876s infinite random-leaf-23; }
+
+@keyframes random-leaf-23 {
+  100% {
+    transform: translateX(740px) translateY(170px) rotate(-324.66597deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(24):not(#first-leaf) {
+  width: 33.42446px;
+  height: 33.42446px;
+  left: -53.42446px;
+  top: 100px;
+  fill: #c26c3d;
+  stroke: #9b5631;
+  z-index: 33;
+  transform-origin: 8.35611px 25.06834px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(24) {
+  animation: 8.65755s linear 15.28333s infinite random-leaf-24; }
+
+@keyframes random-leaf-24 {
+  100% {
+    transform: translateX(740px) translateY(166px) rotate(-364.71998deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(25):not(#first-leaf) {
+  width: 47.95245px;
+  height: 47.95245px;
+  left: -67.95245px;
+  top: -95px;
+  fill: #c04630;
+  stroke: #973726;
+  z-index: 48;
+  transform-origin: 23.97623px 23.97623px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(25) {
+  animation: 7.20475s linear 10.94921s infinite random-leaf-25; }
+
+@keyframes random-leaf-25 {
+  100% {
+    transform: translateX(740px) translateY(160px) rotate(576.60429deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(26):not(#first-leaf) {
+  width: 97.74375px;
+  height: 97.74375px;
+  left: -117.74375px;
+  top: -38px;
+  fill: #8e441f;
+  stroke: #643016;
+  z-index: 98;
+  transform-origin: 24.43594px 73.30781px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(26) {
+  animation: 2.22562s linear 9.92067s infinite random-leaf-26; }
+
+@keyframes random-leaf-26 {
+  100% {
+    transform: translateX(740px) translateY(175px) rotate(-177.6625deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(27):not(#first-leaf) {
+  width: 41.66117px;
+  height: 41.66117px;
+  left: -61.66117px;
+  top: 56px;
+  fill: #a38a24;
+  stroke: #79661b;
+  z-index: 42;
+  transform-origin: 10.41529px 31.24588px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(27) {
+  animation: 7.83388s linear 8.40583s infinite random-leaf-27; }
+
+@keyframes random-leaf-27 {
+  100% {
+    transform: translateX(740px) translateY(190px) rotate(-524.31531deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(28):not(#first-leaf) {
+  width: 32.05949px;
+  height: 32.05949px;
+  left: -52.05949px;
+  top: 141px;
+  fill: #974130;
+  stroke: #703023;
+  z-index: 32;
+  transform-origin: 16.02974px 16.02974px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(28) {
+  animation: 8.79405s linear 15.99528s infinite random-leaf-28; }
+
+@keyframes random-leaf-28 {
+  100% {
+    transform: translateX(740px) translateY(184px) rotate(148.60994deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(29):not(#first-leaf) {
+  width: 61.65556px;
+  height: 61.65556px;
+  left: -81.65556px;
+  top: 65px;
+  fill: #af602c;
+  stroke: #874a22;
+  z-index: 62;
+  transform-origin: 15.41389px 46.24167px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(29) {
+  animation: 5.83444s linear 15.86904s infinite random-leaf-29; }
+
+@keyframes random-leaf-29 {
+  100% {
+    transform: translateX(740px) translateY(160px) rotate(-211.63076deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(30):not(#first-leaf) {
+  width: 60.9668px;
+  height: 60.9668px;
+  left: -80.9668px;
+  top: -85px;
+  fill: #93331f;
+  stroke: #692416;
+  z-index: 61;
+  transform-origin: 15.2417px 45.7251px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(30) {
+  animation: 5.90332s linear 12.3699s infinite random-leaf-30; }
+
+@keyframes random-leaf-30 {
+  100% {
+    transform: translateX(740px) translateY(161px) rotate(-969.58442deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(31):not(#first-leaf) {
+  width: 74.53694px;
+  height: 74.53694px;
+  left: -94.53694px;
+  top: 173px;
+  fill: #96512c;
+  stroke: #6f3c20;
+  z-index: 75;
+  transform-origin: 37.26847px 37.26847px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(31) {
+  animation: 4.54631s linear 15.50298s infinite random-leaf-31; }
+
+@keyframes random-leaf-31 {
+  100% {
+    transform: translateX(740px) translateY(167px) rotate(253.795deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(32):not(#first-leaf) {
+  width: 30.00071px;
+  height: 30.00071px;
+  left: -50.00071px;
+  top: -23px;
+  fill: #b73f2a;
+  stroke: #8d3020;
+  z-index: 30;
+  transform-origin: 7.50018px 22.50053px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(32) {
+  animation: 8.99993s linear 15.99981s infinite random-leaf-32; }
+
+@keyframes random-leaf-32 {
+  100% {
+    transform: translateX(740px) translateY(161px) rotate(-696.46055deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(33):not(#first-leaf) {
+  width: 54.32299px;
+  height: 54.32299px;
+  left: -74.32299px;
+  top: 10px;
+  fill: #9a3f28;
+  stroke: #722e1d;
+  z-index: 54;
+  transform-origin: 13.58075px 40.74224px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(33) {
+  animation: 6.5677s linear 7.27092s infinite random-leaf-33; }
+
+@keyframes random-leaf-33 {
+  100% {
+    transform: translateX(740px) translateY(159px) rotate(-451.78355deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(34):not(#first-leaf) {
+  width: 32.43036px;
+  height: 32.43036px;
+  left: -52.43036px;
+  top: 80px;
+  fill: #847124;
+  stroke: #5c4f19;
+  z-index: 32;
+  transform-origin: 16.21518px 16.21518px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(34) {
+  animation: 8.75696s linear 6.44218s infinite random-leaf-34; }
+
+@keyframes random-leaf-34 {
+  100% {
+    transform: translateX(740px) translateY(189px) rotate(671.09642deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(35):not(#first-leaf) {
+  width: 56.95902px;
+  height: 56.95902px;
+  left: -76.95902px;
+  top: 8px;
+  fill: #ab8636;
+  stroke: #84672a;
+  z-index: 57;
+  transform-origin: 14.23976px 42.71927px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(35) {
+  animation: 6.3041s linear 14.25313s infinite random-leaf-35; }
+
+@keyframes random-leaf-35 {
+  100% {
+    transform: translateX(740px) translateY(172px) rotate(-354.13366deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(36):not(#first-leaf) {
+  width: 31.12976px;
+  height: 31.12976px;
+  left: -51.12976px;
+  top: -46px;
+  fill: #a15f30;
+  stroke: #7a4824;
+  z-index: 31;
+  transform-origin: 7.78244px 23.34732px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(36) {
+  animation: 8.88702s linear 15.63891s infinite random-leaf-36; }
+
+@keyframes random-leaf-36 {
+  100% {
+    transform: translateX(740px) translateY(200px) rotate(-263.89725deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(37):not(#first-leaf) {
+  width: 37.2656px;
+  height: 37.2656px;
+  left: -57.2656px;
+  top: -70px;
+  fill: #816328;
+  stroke: #5a451c;
+  z-index: 37;
+  transform-origin: 9.3164px 27.9492px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(37) {
+  animation: 8.27344s linear 10.64688s infinite random-leaf-37; }
+
+@keyframes random-leaf-37 {
+  100% {
+    transform: translateX(740px) translateY(193px) rotate(-143.40147deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(38):not(#first-leaf) {
+  width: 77.72199px;
+  height: 77.72199px;
+  left: -97.72199px;
+  top: 183px;
+  fill: #c08930;
+  stroke: #976c26;
+  z-index: 78;
+  transform-origin: 38.861px 38.861px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(38) {
+  animation: 4.2278s linear 7.99686s infinite random-leaf-38; }
+
+@keyframes random-leaf-38 {
+  100% {
+    transform: translateX(740px) translateY(173px) rotate(323.38494deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(39):not(#first-leaf) {
+  width: 36.32874px;
+  height: 36.32874px;
+  left: -56.32874px;
+  top: -66px;
+  fill: #ad942e;
+  stroke: #857123;
+  z-index: 36;
+  transform-origin: 18.16437px 18.16437px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(39) {
+  animation: 8.36713s linear 15.94771s infinite random-leaf-39; }
+
+@keyframes random-leaf-39 {
+  100% {
+    transform: translateX(740px) translateY(175px) rotate(742.69867deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(40):not(#first-leaf) {
+  width: 30.07964px;
+  height: 30.07964px;
+  left: -50.07964px;
+  top: 9px;
+  fill: #7e5025;
+  stroke: #573719;
+  z-index: 30;
+  transform-origin: 7.51991px 22.55973px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(40) {
+  animation: 8.99204s linear 13.1325s infinite random-leaf-40; }
+
+@keyframes random-leaf-40 {
+  100% {
+    transform: translateX(740px) translateY(186px) rotate(-198.35127deg); } }
+
+/* line 65, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+.leaf:nth-of-type(41):not(#first-leaf) {
+  width: 39.70414px;
+  height: 39.70414px;
+  left: -59.70414px;
+  top: 53px;
+  fill: #c68039;
+  stroke: #9e662e;
+  z-index: 40;
+  transform-origin: 19.85207px 19.85207px; }
+
+/* line 82, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover .leaf:nth-of-type(41) {
+  animation: 8.02959s linear 13.74959s infinite random-leaf-41; }
+
+@keyframes random-leaf-41 {
+  100% {
+    transform: translateX(740px) translateY(167px) rotate(767.02503deg); } }
+
+/* line 98, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#ground {
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 100px;
+  fill: #859537;
+  stroke: #647029;
+  stroke-width: 0.25; }
+
+/* line 114, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#google {
+  top: 70px;
+  left: 100px;
+  width: 400px;
+  z-index: 50;
+  fill: #5d7e1b;
+  stroke: #3e5412;
+  stroke-width: 4; }
+
+/* line 134, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#first-leaf {
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 351px;
+  fill: #5d7e1b;
+  stroke: #3e5412;
+  z-index: 100;
+  transform-origin: 73.33333px 73.33333px;
+  transform: rotate(220deg); }
+
+/* line 148, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover #first-leaf {
+  animation: 3s color-shift ease-in-out forwards, 5s first-leaf ease-in-out forwards 2s; }
+
+@keyframes first-leaf {
+  0% {
+    transform: rotate(220deg); }
+  10% {
+    transform: rotate(170deg); }
+  35% {
+    transform: rotate(210deg); }
+  45% {
+    transform: rotate(160deg); }
+  55% {
+    transform: rotate(190deg); }
+  60% {
+    transform: rotate(160deg); }
+  75% {
+    transform: rotate(140deg);
+    animation-timing-function: ease-out; }
+  100% {
+    transform: rotate(0deg) translate(400px, 100px); } }
+
+/* line 169, /Volumes/agriffis1/google-doodle/scss/styles.scss */
+#stage:hover #google {
+  animation: 3s color-shift ease-in-out forwards; }
+
+@keyframes color-shift {
+  0% {
+    fill: #5d7e1b;
+    stroke: #3e5412; }
+  100% {
+    fill: #994d33;
+    stroke: #733926; } }
+
+/*# sourceMappingURL=styles.css.map */

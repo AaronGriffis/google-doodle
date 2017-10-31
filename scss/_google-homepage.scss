@@ -3,16 +3,10 @@
 /* Stage */
 
 #stage {
-    background: gray;
     height: 300px;
     width: 600px;
+    margin: 3em auto;
 }
-
-#stage #star {
-    height: 100px;
-    width: 100px;
-}
-
 
 
 /* DO NOT EDIT BELOW THIS LINE */
@@ -28,7 +22,7 @@ input {
     width: 50%;
 }
 
-div {
+#goole-buttons {
     margin: 3em auto;
     text-align: center;
     width: 50%;

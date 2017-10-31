@@ -1,36 +1,195 @@
-// Grand Central Station
-
 @import 'google-homepage';
 
+// Variables
+$leaves: 40;
 
-// First Frame
-img {
+//Leaf color ranges
+$h-min: 5;
+$h-max: 50;
+$s-min: 50;
+$s-max: 65;
+$l-min: 30;
+$l-max: 50;
+
+//Leaf size range
+$min-size: 30px;
+$max-size: 100px;
+$growth: ($max-size - $min-size) / ($leaves - 1);
+
+$initialDelay: 6s;
+
+svg {
+    position: absolute;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#stage{
+  position: relative;
+  overflow: hidden;
+}
+
+#vignette {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: inset 0px 0px 30px 30px white;
+}
+
+//Global leaf properties
+.leaf {
+  stroke-width: 0.33;
+}
+
+@for $i from 1 through $leaves {
+  //randomize color
+  $h: $h-min + random($h-max - $h-min);
+  $s: $s-min + random($s-max - $s-min);
+  $l: $l-min + random($l-max - $l-min);
+  $bg-color: hsl($h, $s, $l);
+  $border-color: hsl($h, $s, $l - 10);
+  
+  $rand: random();
+  $gamma: $rand * $rand * $rand;
+  $size: ($gamma * ($max-size - $min-size)) + $min-size;
+  @debug($size);
+  $border: $size / 10;
+  
+  //either -1 or +1 by chance
+  $randPosNeg: ((random(2) - 1) * 2 - 1);
+  
+  .leaf:nth-of-type(#{$i + 1}):not(#first-leaf) {
+    width: $size;
+    height: $size;
+    left: -20px - $size;
+    top: random(300) - 100px;
+    fill: $bg-color;
+    stroke: $border-color;
+    z-index: round($size / ($size * 0 + 1));
     
-    opacity: .5;
-    transform: scale(.25) rotate(0);
-    width: 40%;
+    @if ($randPosNeg == 1) {
+      transform-origin: $size/2 $size/2;
+    }
+    @else {
+      transform-origin: (1/4 * $size) (3/4 * $size);
+    }
+  }
+
+  #stage:hover .leaf:nth-of-type(#{$i + 1}) {
+    $rand: random();
+    $duration: (2 - (7 * $min-size / ($max-size - $min-size))) + ((7 * (($max-size + $min-size) - $size)) / ($max-size - $min-size)) + s;
+    $delay: 10 - (($rand * $rand) * 10) + $initialDelay;
     
-    transition: transform .5s;
+    animation: $duration linear $delay infinite random-leaf-#{$i + 1};
+  }
+  
+  @keyframes random-leaf-#{$i + 1} {
+    100% {
+      $size-diff: (($max-size + $min-size) - $size) / ($max-size + $min-size);
+      transform: translateX(640px + $max-size) translateY(random(50) + 150px) rotate($randPosNeg * (random(900) + 180deg * $size-diff));
+    }
+  }
 }
 
-// Last Frame
-img:hover {
-    opacity: 1;
-    transform: scale(1.5) rotate(180deg);
+#ground {
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 100px;
+  fill: hsl(70, 46%, 40%);
+  stroke: hsl(70, 46%, 30%);
+  stroke-width: 0.25;
 }
 
-// First Frame
-.line {
-     fill:none;
-     stroke:#8cff19;
-     stroke-width:30;
-     stroke-miterlimit:10;
+//Initial colors
+$logo-fill-start: hsl(80, 65%, 30%);
+$logo-stroke-start: hsl(80, 65%, 20%);
+$logo-fill-end: hsl(15, 50%, 40%);
+$logo-stroke-end: hsl(15, 50%, 30%);
+
+#google {
+  top: 70px;
+  left: 100px;
+  width: 400px;
+  z-index: round(($max-size * 0.5) / (($max-size * 0.5) * 0 + 1));
+  fill: $logo-fill-start;
+  stroke: $logo-stroke-start;
+  stroke-width: 4;
+}
+
+// #tree {
+//   top: 0;
+//   left: 0;
+//   height: 300px;
+//   width: 375px;
+//   fill: hsl(40, 46%, 30%);
+//   stroke: hsl(40, 46%, 20%);
+//   stroke-width: 0.2;
+// }
+
+#first-leaf {
+  width: $max-size;
+  height: $max-size;
+  top: 100px;
+  left: 351px;
+  fill: $logo-fill-start;
+  stroke: $logo-stroke-start;
+  z-index: 100;
+  
+  $origin: $max-size - ($max-size/6) - ($max-size/10);
+  transform-origin: $origin $origin;
+  transform: rotate(220deg);
+}
+
+#stage:hover #first-leaf {
+  animation: 3s color-shift ease-in-out forwards,
+             5s first-leaf ease-in-out forwards 2s;
+}
+
+@keyframes first-leaf {
+  0% {transform: rotate(220deg);}
+  10% {transform: rotate(170deg);}
+  35% {transform: rotate(210deg);}
+  45% {transform: rotate(160deg);}
+  55% {transform: rotate(190deg);}
+  60% {transform: rotate(160deg);}
+  75% {
+    transform: rotate(140deg);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: rotate(0deg) translate(400px, 100px);
+  }
+}
+
+#stage:hover #google {
+  animation: 3s color-shift ease-in-out forwards;
+}
+
+@for $i from 1 through 6 {
+  //randomize color
+  $h: $h-min + random($h-max - $h-min);
+  $s: $s-min + random($s-max - $s-min);
+  $l: $l-min + random($l-max - $l-min);
+  $bg-color: hsl($h, $s, $l);
+  $border-color: hsl($h, $s, $l - 10);
+  
+  #google>path:nth-of-type(#{$i}) {
     
-    transition: stroke 1s;
+  }
 }
 
-// Last Frame
-.line:hover {
-    stroke: red;
+@keyframes color-shift {
+  0% {
+  fill: $logo-fill-start;
+  stroke: $logo-stroke-start;
+  }
+  100% {
+  fill: $logo-fill-end;
+  stroke: $logo-stroke-end;
+  }
 }
-
