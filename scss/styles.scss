@@ -95,16 +95,6 @@ svg {
   }
 }
 
-#ground {
-  bottom: 0;
-  left: 0;
-  width: 600px;
-  height: 100px;
-  fill: hsl(70, 46%, 40%);
-  stroke: hsl(70, 46%, 30%);
-  stroke-width: 0.25;
-}
-
 //Initial colors
 $logo-fill-start: hsl(80, 65%, 30%);
 $logo-stroke-start: hsl(80, 65%, 20%);
@@ -120,16 +110,6 @@ $logo-stroke-end: hsl(15, 50%, 30%);
   stroke: $logo-stroke-start;
   stroke-width: 4;
 }
-
-// #tree {
-//   top: 0;
-//   left: 0;
-//   height: 300px;
-//   width: 375px;
-//   fill: hsl(40, 46%, 30%);
-//   stroke: hsl(40, 46%, 20%);
-//   stroke-width: 0.2;
-// }
 
 #first-leaf {
   width: $max-size;
