@@ -95,19 +95,11 @@ svg {
   }
 }
 
-//Initial colors
-$logo-fill-start: hsl(80, 65%, 30%);
-$logo-stroke-start: hsl(80, 65%, 20%);
-$logo-fill-end: hsl(15, 50%, 40%);
-$logo-stroke-end: hsl(15, 50%, 30%);
-
 #google {
   top: 70px;
   left: 100px;
   width: 400px;
   z-index: round(($max-size * 0.5) / (($max-size * 0.5) * 0 + 1));
-  fill: $logo-fill-start;
-  stroke: $logo-stroke-start;
   stroke-width: 4;
 }
 
@@ -116,8 +108,6 @@ $logo-stroke-end: hsl(15, 50%, 30%);
   height: $max-size;
   top: 100px;
   left: 351px;
-  fill: $logo-fill-start;
-  stroke: $logo-stroke-start;
   z-index: 100;
   
   $origin: $max-size - ($max-size/6) - ($max-size/10);
@@ -126,7 +116,7 @@ $logo-stroke-end: hsl(15, 50%, 30%);
 }
 
 #stage:hover #first-leaf {
-  animation: 3s color-shift ease-in-out forwards,
+  animation: 3s color-shift-7 ease-in-out forwards,
              5s first-leaf ease-in-out forwards 2s;
 }
 
@@ -146,30 +136,42 @@ $logo-stroke-end: hsl(15, 50%, 30%);
   }
 }
 
-#stage:hover #google {
-  animation: 3s color-shift ease-in-out forwards;
-}
 
-@for $i from 1 through 6 {
+@for $i from 1 through 7 {
   //randomize color
-  $h: $h-min + random($h-max - $h-min);
-  $s: $s-min + random($s-max - $s-min);
-  $l: $l-min + random($l-max - $l-min);
-  $bg-color: hsl($h, $s, $l);
-  $border-color: hsl($h, $s, $l - 10);
-  
-  #google>path:nth-of-type(#{$i}) {
-    
-  }
-}
+  $h: 70 + random(85 - 70);
+  $s: 35 + random(50 - 35);
+  $l: 30 + random(50 - 30);
+  $bg-color-start: hsl($h, $s, $l);
+  $border-color-start: hsl($h, $s, $l - 10);
 
-@keyframes color-shift {
-  0% {
-  fill: $logo-fill-start;
-  stroke: $logo-stroke-start;
+  $h2: 5 + random(15 - 5);
+//   $s2: 50 + random(65 - 50);
+  $bg-color-end: hsl($h2, $s, $l);
+  $border-color-end: hsl($h2, $s, $l - 10);
+
+  #google>path:nth-of-type(#{$i}) {
+   fill: $bg-color-start;
+   stroke: $border-color-start;
   }
-  100% {
-  fill: $logo-fill-end;
-  stroke: $logo-stroke-end;
+
+  #first-leaf {
+   fill: $bg-color-start;
+   stroke: $border-color-start;
   }
+
+   #stage:hover #google>path:nth-of-type(#{$i}) {
+   animation: 3s color-shift-#{$i} ease-in-out forwards;
+   }
+
+  @keyframes color-shift-#{$i} {
+   0% {
+   fill: $bg-color-start;
+   stroke: $border-color-start;
+   }
+   100% {
+   fill: $bg-color-end;
+   stroke: $border-color-end;
+   }
+ }
 }
