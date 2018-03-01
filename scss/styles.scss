@@ -29,15 +29,22 @@ svg {
   overflow: hidden;
 }
 
-#vignette {
+.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   z-index: 1000;
   pointer-events: none;
+}
+
+#vignette {
   box-shadow: inset 0px 0px 30px 30px white;
+}
+
+#hover-tip {
+   color: hsl(80, 35, 40);
+   text-align: center;
+   transition: opacity 0.5s ease-in-out;
 }
 
 //Global leaf properties
@@ -118,6 +125,10 @@ svg {
 #stage:hover #first-leaf {
   animation: 3s color-shift-7 ease-in-out forwards,
              5s first-leaf ease-in-out forwards 2s;
+}
+
+#stage:hover #hover-tip {
+   opacity: 0;
 }
 
 @keyframes first-leaf {
