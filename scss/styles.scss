@@ -1,3 +1,4 @@
+@import 'normalize';
 @import 'google-homepage';
 
 // Variables
@@ -43,6 +44,7 @@ svg {
 
 #hover-tip {
    color: hsl(80, 35, 40);
+   font-family: sans-serif;
    text-align: center;
    transition: opacity 0.5s ease-in-out;
 }
